@@ -1,0 +1,4 @@
+# Main runtime dependencies for this project
+# (standard library only at the moment)
+
+# Keep this file for future third-party dependencies.

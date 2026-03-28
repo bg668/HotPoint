@@ -1,0 +1,2 @@
+# Dependencies for WeChat fetch pipeline in ~/.agent-reach-venv
+miku-ai==0.1.0

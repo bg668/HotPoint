@@ -24,7 +24,7 @@
 ```bash
 python3 -m venv ~/.agent-reach-venv
 ~/.agent-reach-venv/bin/python -m pip install -U pip
-~/.agent-reach-venv/bin/python -m pip install miku-ai
+~/.agent-reach-venv/bin/python -m pip install -r requirements-agent-reach.txt
 ```
 
 ### 2) 验证安装
@@ -46,6 +46,7 @@ python3 -m venv ~/.agent-reach-venv
 
 ```bash
 cd /Users/biguncle/project/aihot-source-monitor
+python3 -m pip install -r requirements.txt
 python3 server.py
 ```
 
