@@ -14,6 +14,34 @@
 
 ---
 
+## 环境准备（含公众号抓取依赖）
+
+> 项目里微信公众号抓取是通过 `~/.agent-reach-venv/bin/python` 调用 `miku_ai` 完成。
+> 若你只想跑 V2EX/Reddit，可跳过这部分。
+
+### 1) 创建并安装 `~/.agent-reach-venv`
+
+```bash
+python3 -m venv ~/.agent-reach-venv
+~/.agent-reach-venv/bin/python -m pip install -U pip
+~/.agent-reach-venv/bin/python -m pip install miku-ai
+```
+
+### 2) 验证安装
+
+```bash
+~/.agent-reach-venv/bin/python -c "import miku_ai; print('miku_ai ok')"
+```
+
+如果输出 `miku_ai ok`，说明公众号依赖可用。
+
+### 3) 常见问题
+
+- 报错 `~/.agent-reach-venv/bin/python 不存在`
+  - 说明虚拟环境没创建成功，重新执行上面的 venv 创建命令。
+- 报错 `No module named miku_ai`
+  - 说明包未安装到该虚拟环境，重新执行安装命令。
+
 ## 启动
 
 ```bash
