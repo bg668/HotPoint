@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>信息收集结果管理平台</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">AI <span>HOT</span></div>
+        <nav>
+          <button class="nav-item active" data-view="news">热点资讯</button>
+          <button class="nav-item" data-view="sources">监听源</button>
+          <button class="nav-item" data-view="logs">源头获取记录</button>
+          <button class="nav-item" data-view="rules">筛选策略</button>
+          <button class="nav-item" data-view="favorites">收藏</button>
+          <button class="nav-item" data-view="admin">平台管理</button>
+        </nav>
+        <div class="side-footer">MVP v1.1 · 登录/注册/邀请码</div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h1 id="pageTitle">热点资讯</h1>
+          <div class="actions">
+            <span id="userInfo" class="small"></span>
+            <button id="seedBtn" class="btn ghost">模拟抓取一批</button>
+            <button id="exportBtn" class="btn">导出 JSON</button>
+            <button id="logoutBtn" class="btn ghost">退出登录</button>
+            <label class="btn ghost file-btn">
+              导入 JSON
+              <input id="importInput" type="file" accept="application/json" />
+            </label>
+          </div>
+        </header>
+
+        <section id="view-news" class="view active"></section>
+        <section id="view-sources" class="view"></section>
+        <section id="view-logs" class="view"></section>
+        <section id="view-rules" class="view"></section>
+        <section id="view-favorites" class="view"></section>
+        <section id="view-admin" class="view"></section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

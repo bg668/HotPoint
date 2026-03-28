@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录 - 信息收集结果管理平台</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="auth-wrap">
+      <div class="card auth-card">
+        <div class="card-title">登录平台</div>
+        <div class="auth-body">
+          <div class="small">默认管理员：bg / dd0131uu</div>
+          <input id="username" placeholder="用户名" />
+          <input id="password" type="password" placeholder="密码" />
+          <button id="loginBtn" class="btn">登录</button>
+          <div id="msg" class="small"></div>
+          <div class="small">没有账号？<a href="/register">去注册（需邀请码）</a></div>
+        </div>
+      </div>
+    </div>
+    <script src="./auth.js"></script>
+  </body>
+</html>
